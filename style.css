@@ -1,0 +1,101 @@
+/* Projektin tyylit */
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Tausta: #ff3c3c;
+    --Teksti: #000000;
+    --teksti-valkoinen: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Winky Rough', sans-serif;
+    color: var(--Teksti);
+    background-color: var(--Tausta);
+
+h1 {
+    color: white;
+    border: 2px solid black;
+
+}
+
+p {
+    color: midnightblue;
+}
+
+img {
+  border-radius: 8px;
+}
+
+}
+
+
+/* Main lohko */
+
+main {
+    font-size: 1.4em;
+    line-height: 1.4em;
+
+}
+
+/* Section lohko */
+
+section {
+    max-width: 900px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+/* showcase lohko */
+
+.showcase {
+    font-size: 1.7em;
+    padding-top: 50px;
+    width: 100%;
+    height: 300px;
+    background-image: url('galaxy-1998_128.gif');
+    background-size: cover;
+    border-radius: 8px;
+
+}
+
+/*Perustyyli laitteille */
+
+nav a {
+    font-size: 16px;
+    padding: 8px 12px;
+    text-decoration: overline;
+    color:#000000;
+}
+
+nav a {
+  font-size: 20px;
+  padding: 12px 20px; /* Lisää tilaa ympärille */
+  margin: 8px 0; /* Lisää tilaa elementtien väliin */
+  display: inline-block; /* Varmistaa, että padding vaikuttaa */
+}
+
+nav a:focus {
+  outline: 3px solid #0056b3; /* Lisää korostus */
+}
+
+
+/*Mobiililaitteille*/
+@media (max-width: 600px) {
+    nav a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}
+
+.showcase > div {
+    color: var(--teksti-valkoinen);
+    max-width: 50px;
+}
